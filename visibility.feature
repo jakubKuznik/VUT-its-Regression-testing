@@ -13,7 +13,7 @@ Feature: Content visibility
       |   	        |   ✓     |          |            |          | 
 
   ## basic visibility 2
-  Scenario: switch off Use case visibility
+  Scenario Outline: switch off Use case visibility
     Given a use case is created with only "Logged-in user"
     Given a web browse is at the use case "sharing page"
     When administrator click "Can view" checkbox, after that "Save" button 
