@@ -10,7 +10,14 @@ Feature: Content visibility
     When administrator click "Can view" checkbox", after that "Save" button
     Then administrator should see table: 
 	    | Logged-in users	Can add 	Can edit	Can review 	Can view |
-    	    |   		  ✓  	     					         |
+	    |   		  ✓  	     					         |
+
+  ## bacis visibility
+  Scenario: switch on Use case visibility
+    Given a use case is created with no "sharing rights" 
+    Given a web browse is at the use case "sharing page"
+    When administrator click "Can view" checkbox", after that "Save" button
+    Then administrator should see table: 
     Then User "itsreviewer" can see this new use case in the Use Cases cathegory
 
   ## basic visibility 2
