@@ -12,7 +12,6 @@ Feature: Content visibility
       | Logged-in users | Can add | Can edit | Can review | Can view |
       |   	        |   ✓     |          |            |          | 
 
-  ## basic visibility 2
   Scenario Outline: switch off Use case visibility
     Given a use case is created with only "Logged-in user"
     Given a web browse is at the use case "sharing page"
