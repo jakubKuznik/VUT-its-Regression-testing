@@ -4,21 +4,12 @@ Feature: Content visibility
     Given a Administrator is logged in 
 
   ## bacis visibility
-  Scenario: switch on Use case visibility
-    Given a use case is created with no "sharing rights" 
-    Given a web browse is at the use case "sharing page"
-    When administrator click "Can view" checkbox", after that "Save" button
-    Then administrator should see table: 
-	    | Logged-in users	Can add 	Can edit	Can review 	Can view |
-    	    |   		  ✓  	     					         |
-    Then User "itsreviewer" can see this new use case in the Use Cases cathegory
-
-  ## basic visibility 2
-  Scenario: switch off Use case visibility
-    Given a use case is created with only "Logged-in user"
+  Scenario: Changing Use case visibility
+    Given a use case is created 
     Given a web browse is at the use case "sharing page"
     When administrator click "Can view" checkbox, after that "Save" button 
-    Then User "itsreviewer" cannot see this new "use case" in the "Use Cases cathegory"
+    Then User can see this new use case in the Use Cases cathegory
+
 
   ## basic edit
   # I think there is an error 
@@ -26,7 +17,7 @@ Feature: Content visibility
     Given a web browse is at the method "sharing page"
     Given a test tool is create "everyone" can view it
     When administrator click "Can edit" checkbox, after that "Save" button
-    Then User "itsreviewer" can edit tool name
+    Then User can edit tool
 
 
   ## advanced edit with relations 
@@ -36,24 +27,5 @@ Feature: Content visibility
     Given a test tool is create "everyone" can view it
     Given a test method has "Tools relation" with tool
     When administrator click "Can edit" checkbox, after that "Save" button
-    Then User "itsreviewer" cannot edit tool name
-
-  Scenario: 
-    Given: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    Then User cannot edit tool
 
