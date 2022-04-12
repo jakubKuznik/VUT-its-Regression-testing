@@ -9,8 +9,10 @@ Feature: Content visibility
     Given a web browse is at the use case "sharing page"
     When administrator click "Can view" checkbox", after that "Save" button
     Then administrator should see table: 
-	    | Logged-in users	Can add 	Can edit	Can review 	Can view |
-	    |   		  ✓  	     					         |
+	    | Logged-in users | Can add | Can edit | Can review | Can view |
+	    |   		  ✓  					   |
+
+
 
   ## bacis visibility
   Scenario: switch on Use case visibility
