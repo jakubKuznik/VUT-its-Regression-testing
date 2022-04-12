@@ -9,10 +9,10 @@ Feature: Content visibility
     Given a web browse is at the use case "sharing page"
     When administrator click "Can view" checkbox", after that "Save" button
     Then administrator should see table: 
-      | Logged-in users | Can add | Can edit | Can review | Can view |
-      |   	        |   ✓     |          |            |          | 
+        | Logged-in users | Can add | Can edit | Can review | Can view |
+        |   	        |   ✓     |          |            |          | 
 
-  Scenario Outline: switch off Use case visibility
+  Scenario: switch off Use case visibility
     Given a use case is created with only "Logged-in user"
     Given a web browse is at the use case "sharing page"
     When administrator click "Can view" checkbox, after that "Save" button 
