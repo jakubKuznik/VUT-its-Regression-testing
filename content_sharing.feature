@@ -49,8 +49,8 @@ Feature: Content sharing changes
     Then reg_user cannot edit tool name
     
 
-  ## Add access right  
-  Scenario: Adding use case 
+  ## Add access right
+  Scenario: Adding use case  
     Given a web browser is at the Use Cases page 
     Given a Use Cases has "Logged-in user can add" access right
     Given a reg_user is logged in 
@@ -59,9 +59,19 @@ Feature: Content sharing changes
 	    | Add new..|
 	    | Folder   |
             | Use Case |
-            | More...  |
+	    | More...  |
 
-  ## basic can 
+  ## Add access right advanced
+  Scenario: Adding use case 
+    Given a web browser is at the Use Cases page 
+    Given a Use Cases has "Logged-in user can add" access right
+    Given a reg_user is logged in 
+    When If there is "Add new.." button then clik on it
+    Then click on Use case
+    Then fill Title text box and Description text box 
+    Then click Save button
+    Then to reg_user is shown his Use case page 
+
 
 
 
