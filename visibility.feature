@@ -2,15 +2,7 @@ Feature: Content visibility
 
   Background:
     Given a Administrator is logged in 
-
-  ## bacis visibility
-  Scenario: switch on Use case visibility
-    Given a use case is created with no "sharing rights" 
-    Given a web browse is at the use case "sharing page"
-    When administrator click "Can view" checkbox", after that "Save" button
-    Then administrator should see table: 
-        | Logged-in users | Can add | Can edit | Can review | Can view |
-
+      
   Scenario: switch off Use case visibility
     Given a use case is created with only "Logged-in user"
     Given a web browse is at the use case "sharing page"
