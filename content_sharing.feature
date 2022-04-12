@@ -23,9 +23,9 @@ Feature: Content sharing changes
 
   ## basic edit
   Scenario: Editing relation 
-    Given: a Tool is created with "Logged-in user can view and edit" sharing right
-    Given: User reg_user is logged in
-    Given: a web browser is at tool editing page
+    Given a Tool is created with "Logged-in user can view and edit" sharing right
+    Given User reg_user is logged in
+    Given a web browser is at tool editing page
     Then User rewrite name
     Then User click on save button
     Then page with new name should occur
