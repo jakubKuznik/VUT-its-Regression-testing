@@ -18,7 +18,7 @@ Feature: Content sharing changes
     Given a web browser is at the use case "sharing page"
     Given a use case is created with no "sharing rights" 
     Given a Administrator is logged in 
-    When administrator click "Can view" checkbox", after that "Save" button
+    When administrator click "Can view checkbox", after that "Save" button
     Then reg_user can see this "use case" in the "Use Cases cathegory"
 
   ## basic edit
