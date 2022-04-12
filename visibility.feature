@@ -12,7 +12,12 @@ Feature: Content visibility
       | Logged-in users | Can add | Can edit | Can review | Can view |
       |   	        |   ✓     |          |            |          | 
 
-
+  ## basic visibility 2
+  Scenario: switch off Use case visibility
+    Given a use case is created with only "Logged-in user"
+    Given a web browse is at the use case "sharing page"
+    When administrator click "Can view" checkbox, after that "Save" button 
+    Then User "itsreviewer" cannot see this new "use case" in the "Use Cases cathegory"
 
   ## bacis visibility
   Scenario: switch on Use case visibility
@@ -22,12 +27,7 @@ Feature: Content visibility
     Then administrator should see table: 
     Then User "itsreviewer" can see this new use case in the Use Cases cathegory
 
-  ## basic visibility 2
-  Scenario: switch off Use case visibility
-    Given a use case is created with only "Logged-in user"
-    Given a web browse is at the use case "sharing page"
-    When administrator click "Can view" checkbox, after that "Save" button 
-    Then User "itsreviewer" cannot see this new "use case" in the "Use Cases cathegory"
+
 
   ## basic edit
   # I think there is an error 
