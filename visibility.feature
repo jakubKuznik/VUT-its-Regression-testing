@@ -10,8 +10,7 @@ Feature: Content visibility
     When administrator click "Can view" checkbox", after that "Save" button
     Then administrator should see table: 
 	    | Logged-in users | Can add | Can edit | Can review | Can view |
-	    |   		  ✓  					   |
-
+	    |   	      |   ✓     |          |            |          | 
 
 
   ## bacis visibility
