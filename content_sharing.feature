@@ -3,7 +3,7 @@ Feature: Content sharing changes
   ## note:
   # administrator - administrator account 
   # reg_user          - registred user 
-  
+  # user 	      - page visitor 
 
   ## basic visibility - switch off
   Scenario: switch off Use case visibility
@@ -72,10 +72,21 @@ Feature: Content sharing changes
     Then click Save button
     Then to reg_user is shown his Use case page 
 
+  ## Public state 
+  Scenario: Public Use Case
+    Given a web browser is at the existing use case page
+    Given use case state is private 
+    Given Administrator is logged in 
+    When Administrator click on "Publish" option from "State" menu
+    Then User see use case in Use Cases cathegory page 
 
-
-
-
+  ## Private state  
+  Scenario: Hide Use Case from public
+    Given a web browser is at the existing use case page
+    Given use case state is public  
+    Given Administrator is logged in 
+    When Administrator click on "Send back" option from "State" menu
+    Then User dont't see  use case in Use Cases cathegory page 
 
 
 
