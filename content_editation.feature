@@ -1,16 +1,20 @@
 Feature: Content creation and editation
-  Background: Administrator is logged in Value3s page 
+  Administrator or registered user who have rights can create new entities or editing existing once. 
+  Entities have relationships with each other, we can also change and create these relationship.
 
+  Background: Administrator is logged in  
 
+  Scenario: Creating Use case 
+    Given a web browse is at "Add Use case" page 
+    And all required fields are filled 	
+    When administrator click on "Save" button
+    Then Use case page is visible in "Use Cases" page 
 
-## Create use case 
-Scenario: Creating Use case 
-  Given a web browse is at home page
-  Given a Administrator is logged in
-  When administrator click "Add new... Use Case" button.
-  Then "Add Use Case" page is shown
-
-# create evaluation scenario 
+  Scenario: New relation between Use case and Evaluation scenario 
+    Given Use case is created
+    Given a Evaluation scenario is created 
+    When administrator click "Add new... Use Case" button.
+    Then "Add Use Case" page is shown
 
 
 # u have use case that is maped to evaluation scenario 

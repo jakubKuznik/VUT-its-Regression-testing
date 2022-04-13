@@ -1,4 +1,6 @@
 Feature: Content sharing changes
+  In default only Administrator can view or edit elements, but we can give this right to logged users.
+  Visitor can only see published entites. 
 
   ## note:
   # administrator     - administrator account 
