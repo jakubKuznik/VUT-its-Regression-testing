@@ -1,10 +1,49 @@
-Feature: Content editation
+Feature: Content creation and editation
+  Background: Administrator is logged in Value3s page 
 
-## creation  - adding, change, deletion
-## editation - adding, change, deletion 
-Scenario: Changing Use case visibility
-  Given a web browse is at use case sharing page
+
+
+## Create use case 
+Scenario: Creating Use case 
+  Given a web browse is at home page
   Given a Administrator is logged in
-  Given a use case 
-  When administrator click "Can view" checkbox, after that "Save" button 
-  Then User can see this new use case in the Use Cases cathegory
+  When administrator click "Add new... Use Case" button.
+  Then "Add Use Case" page is shown
+
+# create evaluation scenario 
+
+
+# u have use case that is maped to evaluation scenario 
+#  change it to difrent one 
+
+#create new standart assign it to use case 
+
+
+# create organization map it to use case 
+
+# create organization ## map it to use case # delete organization
+
+# u have use case that has relation with evaluation scenario, 
+# change use case name 
+
+# use case has standart 
+# change standart number 
+
+## use case has relation with one evaluation scenario add another 
+
+## standart has use case add another there 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

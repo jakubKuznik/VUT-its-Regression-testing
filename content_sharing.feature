@@ -1,7 +1,7 @@
 Feature: Content sharing changes
 
   ## note:
-  # administrator - administrator account 
+  # administrator     - administrator account 
   # reg_user          - registred user 
   # user 	      - page visitor 
 
@@ -27,9 +27,8 @@ Feature: Content sharing changes
   Scenario: Editing relation 
     Given a Tool is created with "Logged-in user can view and edit" sharing right
     Given User reg_user is logged in
-    Given a web browser is at tool editing page
-    When reg_user click "edit" button
-    And reg_user change name of Tool to new one 
+    Given a web browser is at "tool editing page"
+    When reg_user "change name" of Tool to new one 
     And reg_user click on "save" button
     Then Page with new "tool" name is presented to reg_user
 
@@ -70,11 +69,9 @@ Feature: Content sharing changes
     Given a web browser is at the Use Cases page 
     Given a Use Cases has "Logged-in user can add" access right
     Given a reg_user is logged in 
-    When If there is "Add new.." button then click on it
-    And click on "Use Case"
-    And fill "Title" text box 
-    And fill "Description" text box
-    And click on Save button
+    When If there is "Add new.. Use Case" button then click on it
+    And Fill all required fields 
+    And click "save" button 
     Then to reg_user is shown his Use case page 
 
   ## Public state 
