@@ -1,56 +1,64 @@
 # ITS Projekt 1
 
-- **Autor:** Jméno Příjmení (xlogin99)
+- **Autor:** Jakub Kuzník (xuzni04)
 - **Datum:** 2022-04-17
 
 ## Matice pokrytí artefaktů
-
-| Artifact | 1 | 2 | 3 | ... |
-|----------|---|---|---|-----|
-| Page XYZ1 | x | x |   |     |
-| Page XYZ2 | x |   | x |     |
-| Page ... |   |   | x |  x   |
-| Setting mapping OPQR to ABCD | x |  | x | |
-| Deleting XYZ | x |  | x | |
-| Doing something ... | | | | x |
-| Checking: relationAToB | x |  |  |  x  |
-| Checking: relationXtoY |   | x | x |    |
-| Checking: A covers B | x | x | x |    |
-| Checking ... | | | | x |
-
-Pokud by byl popis artefaktů příliš dlouhý, je možné tabulku rozdělit na
-dvě části:
 
 Popis artefaktů:
 
 | Artifact Id (AId) | Artifact Description |
 |-------------|----------------------|
-| P\_1 | Web page for editing Use Case. |
-| P\_2 | Web page for viewing list of methods |
-| A\_1  | Activity for searching a method. |
-| ...     | ... |
+| A\_1 | Change page visibility for visitors |
+| A\_2 | Chnage page visibility for registred users |
+| A\_3 | Content creation |
+| A\_4 | Content editaion |
+| A\_5 | Content deletion | 
+| A\_6 | Relationship creation |
+| A\_7 | Relationship editation |
+| A\_8 | Relationship deletion |
+| P\_1 | Use case page |
+| P\_2 | Requriments page |
+| P\_3 | Test Cases page |
+| P\_4 | Methods page |
+| P\_5 | Tools page |
+| R\_1 | Use case relationship | 
+| R\_2 | Evaluation scenario relationship | 
+| R\_3 | Requriment relationship | 
+| R\_4 | Test Cases relationship | 
+| R\_5 | Methods  relationship | 
+| R\_6 | Tools  relationship | 
 
 Matice pokrytí:
 
-| AId  | 1 | 2 | 3 | ... |
-|------|---|---|---|-----|
-| P\_1 | x | x |   |     |
-| P\_2 | x |   | x |     |
-| A\_1 | x | x |   |     |
-| ...  |   |   |   |     |
-
+|AId |1|2|3|4|5|6|7|8|9|10|11|12|13|14|16|17|18|19|20|21|22|23|
+|----|-|-|-|-|-|-|-|-|-|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|A\_1|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|A\_2|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|A\_3|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|A\_4|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|A\_5|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|A\_6|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|A\_7|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|A\_8|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|P\_1|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|P\_2|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|P\_3|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|P\_4|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|P\_5|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|R\_1|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|R\_2|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|R\_3|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|R\_4|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|R\_5|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
+|R\_6|x| | | | | | | | |  |  |  |  |  |  |  |  |  |  |  |  |  |   
 
 ## Matice Feature-Test
 
-| Feature file | 1 | 2 | 3 | ... |
-|----------|---|---|---|-----|
-| file1.feature | x | x | | |
-| file2.feature |   |   | x | x |
-| ....feature |   |   |  |   |
+| Feature file     |1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|
+|------------------|-|-|-|-|-|-|-|-|-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| sharing.feature  |x|x|x|x|x|x|x|x| |  |  |  |  |  |  |  |  |  |  |  |  |  |  |      
+| content.feature  | | | | | | | | |x| x| x| x| x| x| x|  |  |  |  |  |  |  |  | 
+|relations.feature | | | | | | | | | |  |  |  |  |  |  |x | x| x| x| x| x| x| x|    
 
-## Grafická reprezentace pokrytí
 
-Tato sekce je volitelná, ale doporučená. Pokud je to možné, vybrané artefakty
-zvýrazněte barvou v daných diagramech.
-
-![Use Case](UseCase.png)
