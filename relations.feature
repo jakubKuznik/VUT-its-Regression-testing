@@ -81,3 +81,6 @@ Feature: Relationships creation and editation
       And "Evaluation Scenario Owner" is set to test case
       When administrator click on "Save" button
       Then Error occur OR "Evaluation Scenario Owner" is not presented
+
+
+

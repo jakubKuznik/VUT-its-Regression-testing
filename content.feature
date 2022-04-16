@@ -5,11 +5,11 @@ Feature: Content creation and editation
       Given Administrator is logged in  
 
     # 9.
-    Scenario: Creating use case 
-      Given a web browser is on "Use case creation" page 
+    Scenario: Creating test case 
+      Given a web browser is on "Test case creation" page 
       And all required fields are filled 	
       When Administrator click on "Save" button
-      Then use case is visible in "Use Cases" page 
+      Then test case is visible in "Test Cases" page 
     
     # 10.
     Scenario: Creating Evaluation scenario 

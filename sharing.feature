@@ -10,33 +10,33 @@ Feature: Content visibility manipulation
   # 1.
   # Private state  
   Scenario: Hide Use Case from public
-    Given a web browser is on the existing use case page
-    Given use case state is public  
+    Given a web browser is on "use case" page
+    And use case "visibility" state is "public"  
     Given Administrator is logged in 
     When Administrator click on "Send back" option from "State" menu
     Then "Use case" is not shown to User in "Use Cases page"  
   
   # 2.
   # basic visibility - switch off
-  Scenario: switch off Use case visibility
-    Given a web browser is on the use case "sharing page"
-    Given a use case is created with only "Logged-in user can view" option
+  Scenario: switch off Method visibility
+    Given a web browser is on the method "sharing page"
+    Given method is created with only "Logged-in user can view" option
     Given a Administrator is logged in 
     When Administrator click "Can view" checkbox.
     And Administrator click "Save" button 
-    Then reg_user can not see this "use case" in the "Use Cases cathegory"
+    Then reg_user can not see this "method" in the "Methods cathegory"
 
-  # 2.
+  # 3.
   # bacis visibility - switch on
-  Scenario: switch on Use case visibility
-    Given a web browser is on the use case "sharing page"
-    Given a use case is created with no "sharing rights" 
+  Scenario: switch on requirement visibility
+    Given a web browser is on the requirement "sharing page"
+    Given a requirement is created with no "sharing rights" 
     Given a Administrator is logged in 
     When Administrator click "Can view checkbox"
     And Administrator click on "Save" button
-    Then reg_user can see this "use case" in the "Use Cases cathegory"
+    Then reg_user can see this "requirement" in the "Requirements cathegory"
 
-  # 3.
+  # 4.
   # basic edit
   Scenario: Editing tool by registred user  
     Given a Tool is created with "Logged-in user can view and edit" sharing right
@@ -46,7 +46,7 @@ Feature: Content visibility manipulation
     And reg_user click on "save" button
     Then Page with new "tool" name is presented to reg_user
 
-  # 4.  
+  # 5.  
   # basic edit with sharing change
   Scenario: Changing test tool edit rights
     Given a web browser is on the method "sharing page"
@@ -56,7 +56,7 @@ Feature: Content visibility manipulation
     And Administrator click "Save" button 
     Then reg_user can edit test tool name
 
-  # 5.
+  # 6.
   # advanced edit with relations
   Scenario: Changing Method edit ability
     Given a web browser is on the method "sharing page"
@@ -68,7 +68,7 @@ Feature: Content visibility manipulation
     And Administrator click on "Save" button
     Then reg_user cannot edit tool name
 
-  # 6.
+  # 7.
   # Add access right
   Scenario: Adding use case by registred user  
     Given a web browser is on the Use Cases page 
