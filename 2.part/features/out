@@ -1,0 +1,508 @@
+[33m
+You can implement step definitions for undefined steps with these snippets:
+
+@given(u'a web browser is on "Evaluation scenario creation" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "Evaluation scenario creation" page')
+
+
+@then(u'Evaluation scenario is visible in "Evaluation scenario page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Evaluation scenario is visible in "Evaluation scenario page"')
+
+
+@given(u'tool is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given tool is created')
+
+
+@given(u'a web browser is on "Tools" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "Tools" page')
+
+
+@given(u'tool "checkbox" is selected')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given tool "checkbox" is selected')
+
+
+@when(u'Administrator click on "Delete" button (trash bin)')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Administrator click on "Delete" button (trash bin)')
+
+
+@then(u'Tool is not visible in "Tools page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Tool is not visible in "Tools page"')
+
+
+@given(u'Method is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given Method is created')
+
+
+@given(u'a web browser is on "method editation" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "method editation" page')
+
+
+@given(u'Name textbox is changet to new one')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given Name textbox is changet to new one')
+
+
+@then(u'Method page with new name is presented')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Method page with new name is presented')
+
+
+@given(u'test is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given test is created')
+
+
+@given(u'a web browser is on "test case editation" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "test case editation" page')
+
+
+@given(u'"Test Case id" is changed to new one')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given "Test Case id" is changed to new one')
+
+
+@then(u'Method page with same name and new id is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Method page with same name and new id is created')
+
+
+@given(u'use case is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given use case is created')
+
+
+@given(u'a web browser is on "Edit Use Case" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "Edit Use Case" page')
+
+
+@given(u'a web browser is at section "VALU3S Framework"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is at section "VALU3S Framework"')
+
+
+@given(u'in "Evaluation Performance Indicator" "V&V process criteria" is chosen')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given in "Evaluation Performance Indicator" "V&V process criteria" is chosen')
+
+
+@then(u'use case page is presented')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then use case page is presented')
+
+
+@then(u'"V&V process criteria" is pre in "Evaluation Performance Indicator"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then "V&V process criteria" is pre in "Evaluation Performance Indicator"')
+
+
+@given(u'a web browser is on "home page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "home page"')
+
+
+@when(u'administrator click on "Add new... Workflow"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When administrator click on "Add new... Workflow"')
+
+
+@then(u'Workflow edit page is presented')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Workflow edit page is presented')
+
+
+@given(u'Use case is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given Use case is created')
+
+
+@given(u'a Evaluation scenario is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a Evaluation scenario is created')
+
+
+@given(u'Evaluation scenario does not have any relations')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given Evaluation scenario does not have any relations')
+
+
+@when(u'Administrator add created "evaluation scenario" to "Evaluation Scenarios List"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Administrator add created "evaluation scenario" to "Evaluation Scenarios List"')
+
+
+@then(u'Evaluation scenario is shown in Use case Evaluation Scenarios List')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Evaluation scenario is shown in Use case Evaluation Scenarios List')
+
+
+@given(u'Evaluation scenario is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given Evaluation scenario is created')
+
+
+@given(u'Evaluation scenario has relation with use case')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given Evaluation scenario has relation with use case')
+
+
+@given(u'a web browser is on that "evaluation scenario page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on that "evaluation scenario page"')
+
+
+@when(u'Administrator click on "Actions Delete"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Administrator click on "Actions Delete"')
+
+
+@then(u'evaluation scenario is not present in use case "Evaluation Scenarios List"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then evaluation scenario is not present in use case "Evaluation Scenarios List"')
+
+
+@given(u'use case has no relations with any organization')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given use case has no relations with any organization')
+
+
+@given(u'two diferent organizations are created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given two diferent organizations are created')
+
+
+@given(u'a Web browser is on "Edit Use Case" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a Web browser is on "Edit Use Case" page')
+
+
+@given(u'One organization is added to "Use Case Provider" list')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given One organization is added to "Use Case Provider" list')
+
+
+@given(u'Both organizations are added to "Partner" list')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given Both organizations are added to "Partner" list')
+
+
+@then(u'Organizations are shown in proper cathegories')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Organizations are shown in proper cathegories')
+
+
+@given(u'a method is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a method is created')
+
+
+@given(u'method has "Test Case or V&V" relation with "test case"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given method has "Test Case or V&V" relation with "test case"')
+
+
+@given(u'a web browser is at "Edit test case" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is at "Edit test case" page')
+
+
+@given(u'"Test Case Id" is changed to diferent one')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given "Test Case Id" is changed to diferent one')
+
+
+@then(u'method page has "Test Case or V&V" relation with "test case"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then method page has "Test Case or V&V" relation with "test case"')
+
+
+@given(u'method, test case are created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given method, test case are created')
+
+
+@given(u'they have "Evaluation Type" "Experimental - Testing"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given they have "Evaluation Type" "Experimental - Testing"')
+
+
+@given(u'method has relation with test case')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given method has relation with test case')
+
+
+@given(u'a web browser is on test case "Edit page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on test case "Edit page"')
+
+
+@given(u'"Experimental - Monitoring" is added to "Evaluation Type"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given "Experimental - Monitoring" is added to "Evaluation Type"')
+
+
+@then(u'method page does not have "Experimental - monitoring" in "Evaluation Type" list')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then method page does not have "Experimental - monitoring" in "Evaluation Type" list')
+
+
+@given(u'test case is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given test case is created')
+
+
+@given(u'test case has "Evaluation Enviroment Type" set as "In-the-lab enviroment"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given test case has "Evaluation Enviroment Type" set as "In-the-lab enviroment"')
+
+
+@given(u'a web browser is on "Edit test case" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "Edit test case" page')
+
+
+@given(u'"In-the-lab enviroment" checbox is unmarked')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given "In-the-lab enviroment" checbox is unmarked')
+
+
+@then(u'test case page is presented with no Evaluation Type')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then test case page is presented with no Evaluation Type')
+
+
+@given(u'evaluation scenario is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given evaluation scenario is created')
+
+
+@given(u'evaluation scenario has 2 requirements in "Evaluation Scenario Req. List"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given evaluation scenario has 2 requirements in "Evaluation Scenario Req. List"')
+
+
+@given(u'a web browser is one of these requirement "Edit page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is one of these requirement "Edit page"')
+
+
+@given(u'title is changed to same name as second requirement')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given title is changed to same name as second requirement')
+
+
+@then(u'both requirements are presented in "evaluation scenario page" in "Evaluation Scenario List"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then both requirements are presented in "evaluation scenario page" in "Evaluation Scenario List"')
+
+
+@then(u'they have same name')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then they have same name')
+
+
+@given(u'method is created')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given method is created')
+
+
+@given(u'a web browser is on Evaluation Scenario creation page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on Evaluation Scenario creation page')
+
+
+@given(u'"Evaluation Scenario Owner" is set to test case')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given "Evaluation Scenario Owner" is set to test case')
+
+
+@then(u'Error occur OR "Evaluation Scenario Owner" is not presented')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Error occur OR "Evaluation Scenario Owner" is not presented')
+
+
+@given(u'a web browser is on "use case" page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "use case" page')
+
+
+@given(u'use case "visibility" state is "public"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given use case "visibility" state is "public"')
+
+
+@when(u'Administrator click on "Send back" option from "State" menu')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Administrator click on "Send back" option from "State" menu')
+
+
+@then(u'"Use case" is not shown to User in "Use Cases page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then "Use case" is not shown to User in "Use Cases page"')
+
+
+@given(u'a web browser is on the method "sharing page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on the method "sharing page"')
+
+
+@given(u'method is created with only "Logged-in user can view" option')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given method is created with only "Logged-in user can view" option')
+
+
+@given(u'a Administrator is logged in')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a Administrator is logged in')
+
+
+@when(u'Administrator click "Can view" checkbox.')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Administrator click "Can view" checkbox.')
+
+
+@when(u'Administrator click "Save" button')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Administrator click "Save" button')
+
+
+@then(u'reg_user can not see this "method" in the "Methods cathegory"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then reg_user can not see this "method" in the "Methods cathegory"')
+
+
+@given(u'a web browser is on the requirement "sharing page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on the requirement "sharing page"')
+
+
+@given(u'a requirement is created with no "sharing rights"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a requirement is created with no "sharing rights"')
+
+
+@when(u'Administrator click "Can view checkbox"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Administrator click "Can view checkbox"')
+
+
+@then(u'reg_user can see this "requirement" in the "Requirements cathegory"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then reg_user can see this "requirement" in the "Requirements cathegory"')
+
+
+@given(u'a Tool is created with "Logged-in user can view and edit" sharing right')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a Tool is created with "Logged-in user can view and edit" sharing right')
+
+
+@given(u'User reg_user is logged in')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given User reg_user is logged in')
+
+
+@given(u'a web browser is on "tool editing page"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on "tool editing page"')
+
+
+@when(u'reg_user "change name" of Tool to new one')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When reg_user "change name" of Tool to new one')
+
+
+@when(u'reg_user click on "save" button')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When reg_user click on "save" button')
+
+
+@then(u'Page with new "tool" name is presented to reg_user')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then Page with new "tool" name is presented to reg_user')
+
+
+@given(u'a test tool is create with "Logged-in user can view it" sharing right')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a test tool is create with "Logged-in user can view it" sharing right')
+
+
+@when(u'Administrator click "Can edit" checkbox')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Administrator click "Can edit" checkbox')
+
+
+@then(u'reg_user can edit test tool name')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then reg_user can edit test tool name')
+
+
+@given(u'a test method is created with "Logged-in user can view it" sharing right')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a test method is created with "Logged-in user can view it" sharing right')
+
+
+@given(u'a test "method" has "Tools relation" with "tool"')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a test "method" has "Tools relation" with "tool"')
+
+
+@then(u'reg_user cannot edit tool name')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then reg_user cannot edit tool name')
+
+
+@given(u'a web browser is on the Use Cases page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a web browser is on the Use Cases page')
+
+
+@given(u'a Use Cases has "Logged-in user can add" access right')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a Use Cases has "Logged-in user can add" access right')
+
+
+@given(u'a reg_user is logged in')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Given a reg_user is logged in')
+
+
+@when(u'If there is "Add new.." button then clik on it')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When If there is "Add new.." button then clik on it')
+
+
+@then(u'to reg_user is shown')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then to reg_user is shown')
+
+
+@when(u'If there is "Add new.. Use Case" button then click on it')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When If there is "Add new.. Use Case" button then click on it')
+
+
+@when(u'Fill all required fields')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When Fill all required fields')
+
+
+@when(u'click "save" button')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: When click "save" button')
+
+
+@then(u'to reg_user is shown his Use case page')
+def step_impl(context):
+    raise NotImplementedError(u'STEP: Then to reg_user is shown his Use case page')
+
+[0m
