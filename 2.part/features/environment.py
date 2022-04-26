@@ -6,6 +6,7 @@ from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
+import time
 
 PAGE = "http://localhost:8080/VALU3S"
 
@@ -17,7 +18,7 @@ def get_webdriver():
     except WebDriverException:
         print("Cannot connect to chrome")
         exit()
-    driver.implicitly_wait(1)
+    driver.implicitly_wait(2)
     return driver 
 
 
@@ -32,53 +33,45 @@ def after_all(context):
 def after_scenario(context, scenario):
     # teardown 
     ## if there was something created clear it 
-    for i in range(2):
+    for i in range(1):
         try:
             teardown(context)
         except:
             pass
  
     try:
-        context.driver.find_element(By.CSS_SELECTOR, "#portal-personaltools span:nth-child(2)").click()
-        context.driver.find_element(By.ID, "personaltools-logout").click()
+        pass
+        #context.driver.get("http://localhost:8080/repo")
+        #context.driver.find_element(By.CSS_SELECTOR, "#portal-personaltools span:nth-child(2)").click()
+        #context.driver.find_element(By.ID, "personaltools-logout").click()
     except:
         pass
+    context.driver.get("http://localhost:8080/repo")
 
 
 ## remove created elements
 def teardown(context):
-    context.driver.get("http://localhost:8080/repo/folder_contents")
-    context.driver.find_element(By.CSS_SELECTOR, "#contentview-folderContents span:nth-child(2)").click()
-    context.driver.find_element(By.ID, "select8InputCheckbox").click()
-    element = context.driver.find_element(By.ID, "btn-structure-rearrange")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element).perform()
-    element = context.driver.find_element(By.CSS_SELECTOR, "body")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element, 0, 0).perform()
-    element = context.driver.find_element(By.ID, "btn-paste")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element).perform()
-    element = context.driver.find_element(By.CSS_SELECTOR, "body")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element, 0, 0).perform()
-    element = context.driver.find_element(By.ID, "btn-delete")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element).perform()
-    element = context.driver.find_element(By.CSS_SELECTOR, "body")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element, 0, 0).perform()
-    context.driver.find_element(By.CSS_SELECTOR, ".glyphicon-trash").click()
-    element = context.driver.find_element(By.CSS_SELECTOR, ".glyphicon-trash")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element).perform()
-    element = context.driver.find_element(By.CSS_SELECTOR, "body")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element, 0, 0).perform()
-    context.driver.find_element(By.CSS_SELECTOR, ".applyBtn").click()
-    element = context.driver.find_element(By.ID, "btn-tags")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element).perform()
-    element = context.driver.find_element(By.CSS_SELECTOR, "body")
-    actions = ActionChains(context.driver)
-    actions.move_to_element(element, 0, 0).perform()
+    for i in range(1):
+        try:
+            context.driver.get("http://localhost:8080/repo")
+            context.driver.find_element(By.CSS_SELECTOR, "#contentview-folderContents span:nth-child(2)").click()
+            context.driver.find_element(By.ID, "select8InputCheckbox").click()
+            context.driver.find_element(By.CSS_SELECTOR, ".glyphicon-trash").click()
+            context.driver.find_element(By.CSS_SELECTOR, ".glyphicon-trash").click()
+            time.sleep(0.5)
+            context.driver.find_element(By.CSS_SELECTOR, ".applyBtn").click()
+        except:
+            pass
+    #for i in range(50):
+        #try:
+            #context.driver.get("http://localhost:8080/repo/tools/folder_contents")
+            #context.driver.find_element(By.CSS_SELECTOR, "#contentview-folderContents span:nth-child(2)").click()
+            #context.driver.find_element(By.ID, "select0InputCheckbox").click()
+            #context.driver.find_element(By.CSS_SELECTOR, ".glyphicon-trash").click()
+            #context.driver.find_element(By.CSS_SELECTOR, ".glyphicon-trash").click()
+            #time.sleep(0.5)
+            #context.driver.find_element(By.CSS_SELECTOR, ".applyBtn").click()
+        #except:
+            #pass
+
+
