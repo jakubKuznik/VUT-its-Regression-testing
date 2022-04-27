@@ -7,34 +7,26 @@ Feature: Content visibility manipulation
   # reg_user          - registred user 
   # user 	      - page visitor 
 
-  ## 1.
-  ## Private state  
+  # 1.
+  # Private state  
   #Scenario: Hide Use Case from public
+    #Given Administrator is logged in
     #Given a web browser is on "use case" page
-    #And use case "visibility" state is "public"  
-    #Given Administrator is logged in 
+    #And use case "visibility" state is "public"
     #When Administrator click on "Send back" option from "State" menu
-    #Then "Use case" is not shown to User in "Use Cases page"  
-  
-  ## 2.
-  ## basic visibility - switch off
-  #Scenario: switch off Method visibility
-    #Given a web browser is on the method "sharing page"
-    #Given method is created with only "Logged-in user can view" option
-    #Given a Administrator is logged in 
-    #When Administrator click "Can view" checkbox.
-    #And Administrator click "Save" button 
-    #Then reg_user can not see this "method" in the "Methods cathegory"
+    #Then "Use case" is not shown to User in "Use Cases page"
 
-  ## 3.
-  ## bacis visibility - switch on
-  #Scenario: switch on requirement visibility
-    #Given a web browser is on the requirement "sharing page"
-    #Given a requirement is created with no "sharing rights" 
-    #Given a Administrator is logged in 
-    #When Administrator click "Can view checkbox"
-    #And Administrator click on "Save" button
-    #Then reg_user can see this "requirement" in the "Requirements cathegory"
+  # didnt implement almost same   
+
+  # 3.
+  # bacis visibility - switch on
+  Scenario: switch on requirement visibility
+    Given a Administrator is logged in 
+    Given a requirement is created with no "sharing rights" 
+    Given a web browser is on the requirement "sharing page"
+    When Administrator click "Can view checkbox"
+    And Administrator click on "Save" button specify
+    Then reg_user can see this "requirement" in the "Requirements cathegory"
 
   ## 4.
   ## basic edit

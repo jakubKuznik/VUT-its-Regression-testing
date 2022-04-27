@@ -33,24 +33,27 @@ def after_all(context):
 def after_scenario(context, scenario):
     # teardown 
     ## if there was something created clear it 
-    for i in range(1):
+    for i in range(10):
         try:
             teardown(context)
         except:
             pass
- 
-    try:
-        pass
-        #context.driver.get("http://localhost:8080/repo")
-        #context.driver.find_element(By.CSS_SELECTOR, "#portal-personaltools span:nth-child(2)").click()
-        #context.driver.find_element(By.ID, "personaltools-logout").click()
-    except:
-        pass
     context.driver.get("http://localhost:8080/repo")
 
 
 ## remove created elements
 def teardown(context):
+    for i in range(2):
+        try:
+            context.driver.find_element(By.CSS_SELECTOR, "#portal-personaltools span:nth-child(2)").click()
+            context.driver.find_element(By.ID, "personaltools-logout").click()
+            context.driver.get("http://localhost:8080/repo")
+            context.driver.find_element(By.ID, "personaltools-login").click()
+            context.driver.find_element(By.ID, "__ac_name").send_keys("administrator")
+            context.driver.find_element(By.ID, "__ac_password").send_keys("administrator")
+            context.driver.find_element(By.CSS_SELECTOR, ".pattern-modal-buttons > #buttons-login").click()
+        except:
+            pass
     for i in range(1):
         try:
             context.driver.get("http://localhost:8080/repo")
@@ -62,16 +65,4 @@ def teardown(context):
             context.driver.find_element(By.CSS_SELECTOR, ".applyBtn").click()
         except:
             pass
-    #for i in range(50):
-        #try:
-            #context.driver.get("http://localhost:8080/repo/tools/folder_contents")
-            #context.driver.find_element(By.CSS_SELECTOR, "#contentview-folderContents span:nth-child(2)").click()
-            #context.driver.find_element(By.ID, "select0InputCheckbox").click()
-            #context.driver.find_element(By.CSS_SELECTOR, ".glyphicon-trash").click()
-            #context.driver.find_element(By.CSS_SELECTOR, ".glyphicon-trash").click()
-            #time.sleep(0.5)
-            #context.driver.find_element(By.CSS_SELECTOR, ".applyBtn").click()
-        #except:
-            #pass
-
 
